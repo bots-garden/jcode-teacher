@@ -20,7 +20,7 @@ services:
     profiles: [container, webapp]
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.minideb
     environment:
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL}
       - LLM=${LLM}
