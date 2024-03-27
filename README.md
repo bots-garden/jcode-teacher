@@ -29,6 +29,8 @@ To run your application:
 
 ```bash
 LLM=deepseek-coder OLLAMA_BASE_URL=http://ollama-service:11434 docker compose --profile container up
+# the instruct version is better if you need a constructive conversation to create a tutorial for example
+LLM=deepseek-coder:instruct OLLAMA_BASE_URL=http://ollama-service:11434 docker compose --profile container up
 ```
 > The first time only, you must wait for the complete downloading of the model. ⏳
 
@@ -36,12 +38,12 @@ LLM=deepseek-coder OLLAMA_BASE_URL=http://ollama-service:11434 docker compose --
 
 > To do for the first time only:
 ```bash
-LLM=deepseek-coder
+LLM=deepseek-coder:instruct
 ollama pull ${LLM}
 ```
 
 ```bash
-LLM=deepseek-coder OLLAMA_BASE_URL=http://host.docker.internal:11434 docker compose --profile webapp up
+LLM=deepseek-coder:instruct OLLAMA_BASE_URL=http://host.docker.internal:11434 docker compose --profile webapp up
 ```
 
 ## Use a specific env file
