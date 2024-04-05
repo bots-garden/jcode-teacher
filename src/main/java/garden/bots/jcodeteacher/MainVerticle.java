@@ -109,7 +109,6 @@ public class MainVerticle extends AbstractVerticle {
 
       HttpServerResponse response = ctx.response();
 
-
       response
         .putHeader("Content-Type", "application/octet-stream")
         .setChunked(true);

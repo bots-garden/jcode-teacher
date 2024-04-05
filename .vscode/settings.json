@@ -1,7 +1,7 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Default Dark Modern",
-    "editor.fontSize": 16,
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.fontSize": 18,
     "terminal.integrated.fontSize": 16,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
